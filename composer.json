@@ -1,7 +1,10 @@
 {
     "name": "lllw/helper",
-    "description": "php helper",
+    "description": "php helper class(php助手类库集，里面包含了大量的静态方法，静态调用)",
     "type": "library",
+    "keywords": [
+        "helper"
+    ],
     "require": {
         "php": ">=5.4.0"
     },
