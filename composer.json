@@ -10,7 +10,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Lllw\\Helper\\": "src/"
+            "lllw\\helper\\": "src/"
         }
     },
     "license": "MIT",
