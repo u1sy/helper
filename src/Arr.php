@@ -1,6 +1,6 @@
 <?php
 
-namespace lllw\helper;
+namespace Lllw\Helper;
 class Arr
 {
     /** 移除数组中指定键的数据

@@ -1,6 +1,6 @@
 <?php
 
-namespace lllw\helper;
+namespace Lllw\Helper;
 
 class Str
 {
