@@ -1,5 +1,5 @@
 {
-  "name": "lllw/helper",
+  "name": "lme/helper",
   "description": "php helper class(php助手类库集，里面包含了大量的静态方法，静态调用)",
   "type": "library",
   "keywords": [
@@ -13,13 +13,13 @@
   },
   "autoload": {
     "psr-4": {
-      "lllw\\helper\\": "src/"
+      "lme\\helper\\": "src/"
     }
   },
   "license": "MIT",
   "authors": [
     {
-      "name": "lllw",
+      "name": "lme",
       "email": "491042190@qq.com"
     }
   ]

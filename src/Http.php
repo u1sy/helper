@@ -1,6 +1,6 @@
 <?php
 
-namespace Lllw\Helper;
+namespace lme\helper;
 
 /**
  * Http 请求类
