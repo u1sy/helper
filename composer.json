@@ -3,13 +3,16 @@
   "description": "php helper class(php助手类库集，里面包含了大量的静态方法，静态调用)",
   "type": "library",
   "keywords": [
-    "helper"
+    "php",
+    "helper",
+    "tools"
   ],
   "require": {
     "php": ">=5.4.0",
     "ext-curl": "*",
     "ext-openssl": "*",
-    "ext-calendar": "*"
+    "ext-calendar": "*",
+    "ext-mbstring": "*"
   },
   "autoload": {
     "psr-4": {
