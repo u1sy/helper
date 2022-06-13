@@ -31,4 +31,22 @@ class Str
 
         return false;
     }
+
+    /**
+     * 检查字符串是否以某些字符串结尾
+     *
+     * @param  string       $haystack
+     * @param  string|array $needles
+     * @return bool
+     */
+    public static function endsWith(string $haystack, $needles): bool
+    {
+        foreach ((array) $needles as $needle) {
+            if ((string) $needle === static::substr($haystack, -static::length($needle))) {
+                return true;
+            }
+        }
+
+        return false;
+    }
 }
