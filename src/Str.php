@@ -49,4 +49,28 @@ class Str
 
         return false;
     }
+
+    /**
+     * 截取字符串
+     *
+     * @param  string   $string
+     * @param  int      $start
+     * @param  int|null $length
+     * @return string
+     */
+    public static function substr(string $string, int $start, int $length = null): string
+    {
+        return mb_substr($string, $start, $length, 'UTF-8');
+    }
+
+    /**
+     * 获取字符串的长度
+     *
+     * @param  string $value
+     * @return int
+     */
+    public static function length(string $value): int
+    {
+        return mb_strlen($value);
+    }
 }
