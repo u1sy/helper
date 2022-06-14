@@ -51,6 +51,24 @@ class Str
     }
 
     /**
+     * 检查字符串是否以某些字符串开头
+     *
+     * @param  string       $haystack
+     * @param  string|array $needles
+     * @return bool
+     */
+    public static function startsWith(string $haystack, $needles): bool
+    {
+        foreach ((array) $needles as $needle) {
+            if ('' != $needle && mb_strpos($haystack, $needle) === 0) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /**
      * 截取字符串
      *
      * @param  string   $string
