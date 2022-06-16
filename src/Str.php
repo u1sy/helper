@@ -136,4 +136,26 @@ class Str
         }
         return $str;
     }
+
+    /**
+     * 字符串转小写
+     *
+     * @param  string $value
+     * @return string
+     */
+    public static function lower(string $value): string
+    {
+        return mb_strtolower($value, 'UTF-8');
+    }
+
+    /**
+     * 字符串转大写
+     *
+     * @param  string $value
+     * @return string
+     */
+    public static function upper(string $value): string
+    {
+        return mb_strtoupper($value, 'UTF-8');
+    }
 }
