@@ -4,6 +4,12 @@ namespace lme\helper;
 
 class Str
 {
+    protected static $snakeCache = [];
+
+    protected static $camelCache = [];
+
+    protected static $studlyCache = [];
+
     public static function uuid($prefix = "")
     {
         $chars = md5(uniqid(mt_rand(), true));
@@ -158,4 +164,39 @@ class Str
     {
         return mb_strtoupper($value, 'UTF-8');
     }
+
+    /**
+     * 下划线转驼峰(首字母小写)
+     *
+     * @param  string $value
+     * @return string
+     */
+    public static function camel(string $value): string
+    {
+        if (isset(static::$camelCache[$value])) {
+            return static::$camelCache[$value];
+        }
+
+        return static::$camelCache[$value] = lcfirst(static::studly($value));
+    }
+
+    /**
+     * 下划线转驼峰(首字母大写)
+     *
+     * @param  string $value
+     * @return string
+     */
+    public static function studly(string $value): string
+    {
+        $key = $value;
+
+        if (isset(static::$studlyCache[$key])) {
+            return static::$studlyCache[$key];
+        }
+
+        $value = ucwords(str_replace(['-', '_'], ' ', $value));
+
+        return static::$studlyCache[$key] = str_replace(' ', '', $value);
+    }
+
 }
