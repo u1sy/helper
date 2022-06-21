@@ -12,7 +12,8 @@
     "ext-curl": "*",
     "ext-openssl": "*",
     "ext-calendar": "*",
-    "ext-mbstring": "*"
+    "ext-mbstring": "*",
+    "ext-json": "*"
   },
   "autoload": {
     "psr-4": {
